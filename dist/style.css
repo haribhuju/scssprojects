@@ -16,6 +16,12 @@ body {
   font-family: "Source Sans 3", sans-serif;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 :root {
   --main-bg: hsl(0, 0%, 100%);
   --text-dark: hsl(233, 14%, 25%);
@@ -70,4 +76,42 @@ a:active {
 .wrapper {
   width: min(100% - 3rem, 75rem);
   margin-inline: auto;
+}
+
+.topnav {
+  background-color: var(--header-bg);
+}
+.topnav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+}
+.topnav__homelink:hover {
+  opacity: 0.9;
+}
+.topnav__logo {
+  width: 8rem;
+}
+.topnav__lists {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+.topnav__list {
+  list-style: none;
+}
+.topnav__link {
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+.topnav__link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }/*# sourceMappingURL=style.css.map */

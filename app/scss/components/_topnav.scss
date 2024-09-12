@@ -1,0 +1,47 @@
+@use "../util" as u;
+.topnav {
+  background-color: var(--header-bg);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+  }
+
+  &__homelink {
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__logo {
+    width: u.rem(128);
+  }
+
+  &__lists {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    font-size: u.rem(16);
+    line-height: 1;
+    letter-spacing: u.em(0.8);
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+  }
+}

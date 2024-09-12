@@ -17,3 +17,9 @@ body {
   color: var(--text-dark);
   font-family: u.$font;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
