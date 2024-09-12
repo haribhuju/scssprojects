@@ -1,0 +1,37 @@
+//disable the margin top always
+//make sure all the tags have font size, line height
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin-top: 0;
+}
+// Change the font size as per the projects
+// use fluid fonts for headings
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
