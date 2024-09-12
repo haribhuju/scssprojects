@@ -93,11 +93,26 @@ a:active {
 .topnav__logo {
   width: 8rem;
 }
+@media (max-width: 56.24875em) {
+  .topnav__logo {
+    width: 6rem;
+  }
+}
+@media (max-width: 43.74875em) {
+  .topnav__logo {
+    width: 4.375rem;
+  }
+}
 .topnav__lists {
   margin: 0;
   padding: 0;
   display: flex;
   gap: 40px;
+}
+@media (max-width: 56.24875em) {
+  .topnav__lists {
+    gap: 20px;
+  }
 }
 .topnav__list {
   list-style: none;
@@ -114,4 +129,9 @@ a:active {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
+}
+@media (max-width: 56.24875em) {
+  .topnav__link {
+    font-size: 0.875rem;
+  }
 }/*# sourceMappingURL=style.css.map */

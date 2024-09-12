@@ -17,6 +17,14 @@
 
   &__logo {
     width: u.rem(128);
+
+    @include u.breakpoint-down(medium) {
+      width: u.rem(96);
+    }
+
+    @include u.breakpoint-down(small) {
+      width: u.rem(70);
+    }
   }
 
   &__lists {
@@ -24,6 +32,10 @@
     padding: 0;
     display: flex;
     gap: 40px;
+
+    @include u.breakpoint-down(medium) {
+      gap: 20px;
+    }
   }
 
   &__list {
@@ -42,6 +54,10 @@
       text-decoration: underline;
       text-decoration-thickness: 2px;
       text-underline-offset: 4px;
+    }
+
+    @include u.breakpoint-down(medium) {
+      font-size: u.rem(14);
     }
   }
 }
